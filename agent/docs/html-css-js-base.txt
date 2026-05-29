@@ -1,0 +1,300 @@
+GUIDA BASE HTML, CSS E JAVASCRIPT
+===================================
+
+## HTML – STRUTTURA DI BASE
+
+Un documento HTML ha sempre questa struttura:
+
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titolo pagina</title>
+</head>
+<body>
+    <!-- contenuto visibile -->
+</body>
+</html>
+```
+
+### Tag HTML fondamentali
+
+- <h1> ... <h6>  → Titoli (h1 è il più importante)
+- <p>             → Paragrafo
+- <a href="...">  → Link
+- <img src="..." alt="..."> → Immagine
+- <div>           → Contenitore generico blocco
+- <span>          → Contenitore generico inline
+- <ul> <li>       → Lista non ordinata
+- <ol> <li>       → Lista ordinata
+- <form>          → Modulo
+- <input>         → Campo di input
+- <button>        → Pulsante
+- <table>         → Tabella
+- <section>       → Sezione semantica
+- <header>        → Intestazione pagina/sezione
+- <footer>        → Piè di pagina
+- <nav>           → Navigazione
+- <main>          → Contenuto principale
+- <article>       → Articolo autonomo
+- <b>             → Restituisce il testo in grassetto
+- <i>             → Restituisce il testo in corsivo
+
+- <u>             → Restituisce il testo sottolineato
+- <em>            → Restituisce il testo in corsivo enfatizza il testo
+- <strong>        → Restituisce il testo in grassetto e rafforza il testo
+
+---
+
+## CSS – FOGLI DI STILE
+
+### Come collegare il CSS all'HTML
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+### Selettori CSS principali
+- Elemento:     p { }
+- Classe:       .nome-classe { }
+- ID:           #nome-id { }
+- Discendente:  div p { }
+- Figlio diretto: div > p { }
+- Pseudo-classe: a:hover { }
+
+### Proprietà CSS fondamentali
+
+Colori e sfondi:
+```css
+color: red;                   /* colore testo */
+background-color: #ffffff;    /* colore sfondo */
+background-image: url(...);   /* immagine sfondo */
+```
+
+Testo e font:
+```css
+font-size: 16px;
+font-weight: bold;       /* bold / normal / 100-900 */
+font-family: 'Poppins', sans-serif;
+text-align: center;      /* left / right / justify */
+text-decoration: none;   /* underline / line-through */
+line-height: 1.5;
+```
+
+Box model:
+```css
+margin: 10px;            /* spazio esterno */
+padding: 10px;           /* spazio interno */
+border: 1px solid black;
+border-radius: 8px;      /* angoli arrotondati */
+width: 300px;
+height: 200px;
+box-sizing: border-box;
+```
+
+Display e layout:
+```css
+display: block;
+display: inline;
+display: inline-block;
+display: flex;           /* flexbox */
+display: grid;           /* grid layout */
+display: none;           /* nasconde l'elemento */
+```
+
+### Flexbox
+```css
+.container {
+    display: flex;
+    justify-content: center;    /* allineamento orizzontale */
+    align-items: center;        /* allineamento verticale */
+    flex-direction: row;        /* row / column */
+    flex-wrap: wrap;
+    gap: 16px;
+}
+```
+
+### CSS Grid
+```css
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+```
+
+### Position
+```css
+position: static;       /* default */
+position: relative;     /* rispetto alla posizione normale */
+position: absolute;     /* rispetto al genitore posizionato */
+position: fixed;        /* rispetto alla finestra */
+position: sticky;       /* si "incolla" durante lo scroll */
+top: 0; left: 0; right: 0; bottom: 0;
+```
+
+### Media Queries (Responsive Design)
+```css
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+```
+
+---
+
+## JAVASCRIPT – FONDAMENTALI
+
+### Variabili
+```javascript
+let nome = "Mario";       // variabile modificabile
+const eta = 30;           // costante
+var vecchio = "evita";    // vecchio modo, evitare
+```
+
+### Tipi di dati
+- String: "testo" o 'testo'
+- Number: 42, 3.14
+- Boolean: true / false
+- Array: [1, 2, 3]
+- Object: { chiave: valore }
+- null, undefined
+
+### Funzioni
+```javascript
+// Dichiarazione classica
+function saluta(nome) {
+    return "Ciao " + nome;
+}
+
+// Arrow function
+const saluta = (nome) => "Ciao " + nome;
+```
+
+### Condizioni
+```javascript
+if (condizione) {
+    // ...
+} else if (altra) {
+    // ...
+} else {
+    // ...
+}
+
+// Ternario
+const msg = eta >= 18 ? "adulto" : "minore";
+```
+
+### Cicli
+```javascript
+for (let i = 0; i < 10; i++) { }
+
+for (const item of array) { }
+
+array.forEach(item => { });
+
+while (condizione) { }
+```
+
+### Array – metodi principali
+```javascript
+const arr = [1, 2, 3, 4];
+
+arr.push(5);              // aggiunge in fondo
+arr.pop();                // rimuove ultimo
+arr.shift();              // rimuove primo
+arr.unshift(0);           // aggiunge in testa
+arr.map(x => x * 2);      // trasforma ogni elemento
+arr.filter(x => x > 2);  // filtra elementi
+arr.find(x => x === 3);   // trova primo match
+arr.includes(2);          // verifica presenza
+arr.length;               // lunghezza
+```
+
+### Manipolazione DOM
+```javascript
+// Selezione elementi
+const el = document.getElementById('mio-id');
+const el = document.querySelector('.mia-classe');
+const els = document.querySelectorAll('p');
+
+// Modifica contenuto
+el.textContent = "Nuovo testo";
+el.innerHTML = "<b>HTML</b>";
+
+// Modifica stili
+el.style.color = "red";
+el.classList.add('attivo');
+el.classList.remove('attivo');
+el.classList.toggle('attivo');
+
+// Attributi
+el.setAttribute('href', '#');
+el.getAttribute('href');
+
+// Creazione elementi
+const nuovo = document.createElement('div');
+nuovo.textContent = "Nuovo elemento";
+document.body.appendChild(nuovo);
+```
+
+### Eventi
+```javascript
+el.addEventListener('click', function(event) {
+    console.log('Cliccato!', event);
+});
+
+el.addEventListener('submit', (e) => {
+    e.preventDefault();  // blocca invio form
+});
+
+// Eventi comuni:
+// click, dblclick, mouseover, mouseout
+// keydown, keyup, keypress
+// submit, change, input, focus, blur
+// load, DOMContentLoaded, scroll, resize
+```
+
+### Fetch API (richieste HTTP)
+```javascript
+fetch('https://api.example.com/data')
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(err => console.error(err));
+
+// Con async/await
+async function getData() {
+    try {
+        const res  = await fetch('https://api.example.com/data');
+        const data = await res.json();
+        return data;
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+// POST request
+fetch('/api/chat', {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body:    JSON.stringify({ question: 'Cos\'è il flexbox?' })
+});
+```
+
+### LocalStorage
+```javascript
+localStorage.setItem('chiave', 'valore');
+localStorage.getItem('chiave');
+localStorage.removeItem('chiave');
+localStorage.clear();
+```
+
+### JSON
+```javascript
+const obj = { nome: "Mario", eta: 30 };
+
+JSON.stringify(obj);      // oggetto → stringa JSON
+JSON.parse('{"a":1}');    // stringa JSON → oggetto
+```

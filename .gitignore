@@ -1,0 +1,21 @@
+# Dipendenze Node.js
+agent/node_modules/
+
+# API key - NON committare mai questo file
+agent/.env
+
+# File di sistema Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Claude Code (locale, non condividere)
+.claude/settings.local.json
+
+# File temporanei
+*.tmp
+*.log

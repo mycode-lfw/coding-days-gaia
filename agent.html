@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABFORWEB Agent – Chiedi su HTML, CSS, JavaScript e React</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style-bis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="agent-page-body">
+
+    <!-- Header -->
+    <header class="agent-page-header">
+        <div class="agent-page-header-inner">
+
+            <a href="index-bis.html" class="agent-page-back">
+                <i class="fas fa-arrow-left"></i>
+                <span>Torna al sito</span>
+            </a>
+
+            <div class="agent-page-brand">
+                <img src="Image/logo.png" alt="LABFORWEB" class="agent-page-logo">
+                <div class="agent-page-brand-text">
+                    <strong>LABFORWEB Agent</strong>
+                    <span>Chiedi su HTML, CSS, JavaScript e React</span>
+                </div>
+            </div>
+
+            <div class="agent-page-online">
+                <span class="status-dot"></span> Online
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Chat area -->
+    <main class="agent-page-main">
+
+        <div class="agent-page-messages" id="agentMessages">
+            <div class="agent-msg agent-msg--bot">
+                <div class="msg-bubble">
+                    Ciao! 👋 Sono Anthony, l'assistente di <strong>LABFORWEB</strong>.<br>
+                    Posso rispondere a domande su <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>React</strong>
+                    in base ai materiali del corso.
+                </div>
+            </div>
+        </div>
+
+        <div class="agent-page-input-area">
+            <textarea
+                id="agentInput"
+                class="agent-textarea"
+                placeholder="Scrivi la tua domanda su HTML, CSS o JavaScript..."
+                rows="2"
+                maxlength="800"
+            ></textarea>
+            <button class="agent-send" id="agentSend" aria-label="Invia">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+
+    </main>
+
+    <script src="Script/agent-widget-bis.js"></script>
+</body>
+</html>

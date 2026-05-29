@@ -1,0 +1,126 @@
+/* ===========================================
+   LABFORWEB – Stili aggiuntivi (bis)
+   =========================================== */
+
+/* ---- Pagina Agent full screen ---- */
+
+.agent-page-body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #f9fafb;
+}
+
+/* Header */
+.agent-page-header {
+    background: var(--green);
+    color: #fff;
+    flex-shrink: 0;
+    padding: 0 24px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.agent-page-header-inner {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.agent-page-back {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    transition: color 0.2s;
+}
+.agent-page-back:hover { color: #fff; }
+
+.agent-page-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.agent-page-logo {
+    height: 36px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.agent-page-brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+.agent-page-brand-text strong {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.agent-page-brand-text span {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.agent-page-online {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    opacity: 0.9;
+    white-space: nowrap;
+}
+
+/* Main area */
+.agent-page-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+/* Messaggi */
+.agent-page-messages {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.agent-page-messages::-webkit-scrollbar { width: 4px; }
+.agent-page-messages::-webkit-scrollbar-track { background: transparent; }
+.agent-page-messages::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px; }
+
+/* Input area */
+.agent-page-input-area {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 16px 0 24px;
+    border-top: 1px solid #e8e8e8;
+    background: #f9fafb;
+    flex-shrink: 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .agent-page-back span { display: none; }
+    .agent-page-brand-text span { display: none; }
+}
