@@ -1,0 +1,33 @@
+Utilizzo Claude
+
+PROMPT 1
+Ciao,
+questo è il layout di un sito web che dobbiamo realizzare per un cliente.
+
+Puoi scrivere il codice html, css e javascript necessario alla realizzazione?
+
+Cerca di realizzare un layout che sia più possibile rispondente all'originale.
+
+Crea una cartella chiamata labforweb e all'interno sottocartelle chiamate:
+
+CSS
+Script
+Image
+
+Nella cartella css inserisci il codice css, in quella script il codice Javascript e nella cartella image le immagini che ritieni utili per il layout.
+il documento HTML lo chiami index.html e lo posizioni nella cartella root labforweb
+
+Nel frattempo che Gemini elabora, cerchiamo di capire le parole che non conoscete
+layout - html - css - javascript - root
+
+PROMPT 2
+Grazie mille,
+hai fatto un buon lavoro. Ma alcune immagini non si vedono. Riesci a recuperarle dal documento pdf che ti ho allegato ho devo provvedere io?
+
+PROMPT 3
+Ok, recupero le immagini e gli assegno i nomi che hai suggerito
+
+
+
+PROMPT 4
+E tutte le altre immagini presenti nel file pdf che ti ho allegato? non le hai trovate?

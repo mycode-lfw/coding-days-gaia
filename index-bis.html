@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABFORWEB - Nerd Academy | Corsi Web, AI e Cyber Security a Roma</title>
+    <meta name="description" content="LABFORWEB è la Nerd Academy con corsi professionali in AI Web Developer, Cyber Security, Python e molto altro. Formazione part-time a Roma e online.">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style-bis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p>Noi (www.labforweb.it) e terze parti selezionate (9) raccogliamo informazioni personali come specificato nella <a href="#">privacy policy</a> e utilizziamo cookie o tecnologie simili per finalità tecniche e, con il tuo consenso, anche per le finalità di funzionalità, esperienza, misurazione e "marketing (con annunci personalizzati)" come specificato nella <a href="#">cookie policy</a>. Puoi liberamente prestare, rifiutare o revocare il tuo consenso, in qualsiasi momento, accedendo al pannello delle preferenze. Il rifiuto del consenso può rendere non disponibili le relative funzioni.</p>
+            </div>
+            <div class="cookie-actions">
+                <a href="#" class="cookie-customize">Scopri di più e personalizza</a>
+                <button class="btn-cookie btn-cookie-reject" id="cookieReject">Rifiuta</button>
+                <button class="btn-cookie btn-cookie-accept" id="cookieAccept">Accetta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky wrapper: notification bar + header -->
+    <div class="sticky-wrapper">
+
+        <!-- Notification Bar -->
+        <div class="notification-bar">
+            <div class="container">
+                <p>🚀 Workshop gratuito sull'AI - 15 maggio &nbsp;<a href="#">Scopri di più &rsaquo;</a></p>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header-inner">
+
+                    <!-- Logo -->
+                    <a href="#" class="logo">
+                        <img src="Image/logo.png" alt="LABFORWEB Nerd Academy" class="logo-img">
+                    </a>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-links">
+                            <li><a href="#" class="nav-link">La scuola</a></li>
+                            <li><a href="#" class="nav-link">Corsi</a></li>
+                            <li><a href="#" class="nav-link">Per aziende</a></li>
+                            <li><a href="#" class="nav-link">LabForJob</a></li>
+                            <li><a href="#" class="nav-link">Contatti</a></li>
+                            <li><a href="#" class="nav-link">Eventi</a></li>
+                            <li><a href="#" class="btn-labforyou">LABFORYOU</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Hamburger -->
+                    <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+
+                </div>
+            </div>
+        </header>
+
+    </div><!-- /sticky-wrapper -->
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Il tuo lavoro è nel digitale.<br>Ed è più vicino di quanto pensi.</h1>
+                        <p class="hero-subtitle">Entra in <strong>LABFORWEB</strong>, Nerd Academy</p>
+                        <a href="agent.html" class="btn btn-orange btn-hero"><i class="fas fa-robot"></i> Il tuo Agent Risponde</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FEATURES / USP ===== -->
+        <section class="features">
+            <div class="container">
+                <div class="features-card">
+                <h2 class="features-title">Scegli uno dei corsi LABFORWEB</h2>
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon-wrap">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Part time e orario a scelta</h3>
+                        <p>Max 3 lezioni a settimana da 3 ore ciascuna. In orario mattutino o serale</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon-wrap">
+                            <i class="fas fa-laptop-house"></i>
+                        </div>
+                        <h3>In aula, Online e On Demand</h3>
+                        <p>Puoi seguire in aula a Roma, in Live Streaming, oppure On Demand (con tutor live)</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon-wrap">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3>Paga il tuo corso tra 3 anni</h3>
+                        <p>Con il finanziamento agevolato ottieni 10.000 € e inizi a pagare il tuo corso fra 3 anni</p>
+                    </div>
+                </div>
+                </div><!-- /features-card -->
+            </div>
+        </section>
+
+        <!-- ===== COURSES ===== -->
+        <section class="courses" id="corsi">
+            <div class="container">
+                <div class="courses-grid">
+
+                    <!-- Corso AI Web Developer -->
+                    <article class="course-card reveal">
+                        <div class="course-thumbnail">
+                            <img src="Image/corso-ai.jpg" alt="Corso AI Web Developer" class="course-thumb-img">
+                            <span class="offer-badge"><i class="fas fa-tag"></i> Costo in offerta</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Corso AI Web Developer</h3>
+                            <p class="course-desc">Diventa Full Stack Web Developer con Python. Un corso pratico di 6 mesi, in presenza o online, con competenze aperte al mondo dell'AI</p>
+                            <ul class="course-meta">
+                                <li>
+                                    <i class="fas fa-clock"></i>
+                                    <span>+700 ore part time, in orario <strong>mattutino</strong></span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>In aula a Roma, Live Streaming, On Demand</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Prossima edizione: <strong>15 giugno 2026</strong></span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-euro-sign"></i>
+                                    <span>A partire da <strong class="price-new">3.900 €</strong> <del class="price-old">invece di 5.200 €</del></span>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-course-cta">Scopri di più <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Corso Cyber Security Specialist -->
+                    <article class="course-card reveal">
+                        <div class="course-thumbnail">
+                            <img src="Image/corso-cyber.jpg" alt="Corso Cyber Security Specialist" class="course-thumb-img">
+                            <span class="offer-badge"><i class="fas fa-tag"></i> Costo in offerta</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Corso Cyber Security Specialist</h3>
+                            <p class="course-desc">Proteggi le aziende da minacce informatiche e fai la differenza in un settore in rapida crescita</p>
+                            <ul class="course-meta">
+                                <li>
+                                    <i class="fas fa-clock"></i>
+                                    <span>+350 ore part time, in orario <strong>mattutino o serale</strong></span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>In aula a Roma o in Live Streaming</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Prossima edizione: <strong>18 maggio 2026</strong></span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-euro-sign"></i>
+                                    <span>A partire da <strong class="price-new">4.900 €</strong> <del class="price-old">invece di 5.200 €</del></span>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-course-cta">Scopri di più <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="courses-cta">
+                    <a href="#" class="btn btn-green">Scopri i corsi LABFORWEB</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FINANCING ===== -->
+        <section class="financing">
+            <div class="container">
+                <div class="financing-inner">
+                    <div class="financing-content reveal">
+                        <h2>Fai il tuo corso oggi.<br>Inizi a pagare fra 3 anni</h2>
+                        <p>Grazie al finanziamento agevolato <strong>"per Merito"</strong> di Intesa Sanpaolo ottieni subito <strong>10.000 €</strong> per il tuo corso e inizi a pagare le tue rate <strong>fra 3 anni</strong>.</p>
+                        <p class="req-intro">Bastano solo 2 requisiti:</p>
+                        <ul class="req-list">
+                            <li><i class="fas fa-check-circle"></i> essere residente in Italia</li>
+                            <li><i class="fas fa-check-circle"></i> avere un diploma di scuola superiore</li>
+                        </ul>
+                        <a href="#" class="btn btn-white-outline">Scopri di più</a>
+                        <div class="bank-partner">
+                            <img src="Image/intesa-sanpaolo.png" alt="Intesa Sanpaolo" class="bank-logo-img">
+                        </div>
+                    </div>
+                    <div class="financing-visual reveal">
+                        <img src="Image/financing-person.png" alt="Studentessa LABFORWEB" class="financing-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== REGIONE LAZIO ===== -->
+        <section class="regional">
+            <div class="container">
+                <div class="regional-inner">
+                    <div class="regional-content reveal">
+                        <h2>Frequenti in presenza a Roma?</h2>
+                        <h3>Ottieni il Diploma di Qualifica Professionale rilasciato dalla Regione Lazio</h3>
+                        <p>Se decidi di seguire almeno il 50% del corso presso la nostra sede a Roma, potrai sostenere l'esame finale per il <strong>Diploma di Qualifica Professionale rilasciato dalla Regione Lazio</strong>, che ha valore legale su tutto il territorio italiano ed europeo.</p>
+                        <a href="#" class="btn btn-green">Scopri di più</a>
+                    </div>
+                    <div class="regional-badge reveal">
+                        <img src="Image/regione-lazio.png" alt="Regione Lazio" class="regione-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS ===== -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Cosa dicono i nostri studenti</h2>
+                <div class="testimonials-grid">
+
+                    <div class="testimonial-card reveal">
+                        <div class="t-header">
+                            <img src="Image/testimonial-damiano.jpg" alt="Damiano Maka" class="t-avatar-photo">
+                            <div class="t-info">
+                                <h4>Damiano Maka</h4>
+                                <p>Front End Developer</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="t-text">Finito il corso da front end developer, dopo soli 3 mesi, ho trovato l'azienda giusta dove svolgo il lavoro che ho sempre sognato! Tutto questo grazie alla formazione di LABFORWEB e ai docenti bravissimi.</p>
+                    </div>
+
+                    <div class="testimonial-card reveal">
+                        <div class="t-header">
+                            <img src="Image/testimonial-valentina.jpg" alt="Valentina Iobbi" class="t-avatar-photo">
+                            <div class="t-info">
+                                <h4>Valentina Iobbi</h4>
+                                <p>UX/UI Designer</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="t-text">Competenza, gentilezza, bravura, attenzione, cordialità, simpatia, professionalità. Queste sono solo alcune delle cose che fanno della scuola LABFORWEB una delle migliori scuole di web.</p>
+                    </div>
+
+                    <div class="testimonial-card reveal">
+                        <div class="t-header">
+                            <img src="Image/testimonial-stefano.jpg" alt="Stefano Marrazzo" class="t-avatar-photo">
+                            <div class="t-info">
+                                <h4>Stefano Marrazzo</h4>
+                                <p>Web Developer</p>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="t-text">Grazie ai Job Day, gli incontri con le aziende organizzati da LABFORWEB, sono riuscito a trovare la mia strada per il mondo del lavoro. Posso ritenermi pienamente soddisfatto della scelta che ho fatto.</p>
+                    </div>
+
+                </div>
+
+                <div class="reviews-cta">
+                    <p>Leggi tutte le recensioni su</p>
+                    <div class="review-platforms">
+                        <a href="#" class="review-btn google-btn"><i class="fab fa-google"></i> Google</a>
+                        <span>e</span>
+                        <a href="#" class="review-btn trustpilot-btn">Trustpilot</a>
+                    </div>
+                </div>
+
+                <div class="alumni-cta">
+                    <a href="#" class="btn btn-green">Le storie degli ex alunni</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="Image/logo.png" alt="LABFORWEB" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <span>Labforweb</span>
+                            <small>nerd academy</small>
+                        </div>
+                    </a>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> Via Francesco Saverio Solari, 16 - 00149 Roma</p>
+                    </address>
+                    <h4>Hai bisogno di info?</h4>
+                    <ul class="footer-contacts">
+                        <li><a href="mailto:hello@labforweb.it"><i class="fas fa-envelope"></i> hello@labforweb.it</a></li>
+                        <li><a href="tel:0658205135"><i class="fas fa-phone"></i> 06.58205135</a></li>
+                        <li><a href="tel:3519392372"><i class="fab fa-whatsapp"></i> 351.9392372</a></li>
+                    </ul>
+                    <div class="footer-accreditation">
+                        <div class="footer-regione-badge">REGIONE LAZIO</div>
+                        <p>LABFORWEB srl è un Ente di Formazione accreditato alla Regione Lazio.<br>Determina N. G10020 del 25/07/2024.</p>
+                    </div>
+                    <a href="#" class="footer-small-link">Carta della qualità dei servizi</a>
+                </div>
+
+                <!-- Corsi -->
+                <div class="footer-col">
+                    <h4>Corsi</h4>
+                    <ul>
+                        <li><a href="#">Corso Cyber Security Specialist</a></li>
+                        <li><a href="#">Corso Python</a></li>
+                        <li><a href="#">Corso AI Web Developer</a></li>
+                        <li><a href="#">Corso OSINT – Open Source Intelligence</a></li>
+                        <li><a href="#">Corso JavaScript avanzato</a></li>
+                        <li><a href="#">Corso Angular</a></li>
+                    </ul>
+                </div>
+
+                <!-- La nerd academy -->
+                <div class="footer-col">
+                    <h4>La nerd academy</h4>
+                    <ul>
+                        <li><a href="#">Chi siamo</a></li>
+                        <li><a href="#">La sede a Roma</a></li>
+                        <li><a href="#">Storie di successo</a></li>
+                        <li><a href="#">I corsi LABFORWEB</a></li>
+                        <li><a href="#">Eventi e Workshop</a></li>
+                        <li><a href="#">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <!-- Servizi + Per aziende + Social -->
+                <div class="footer-col">
+                    <h4>Servizi</h4>
+                    <ul>
+                        <li><a href="#">Finanziamento agevolato</a></li>
+                        <li><a href="#">Corsi con Qualifica Professionale Regionale</a></li>
+                        <li><a href="#">Prenota un appuntamento</a></li>
+                    </ul>
+                    <h4>Per aziende</h4>
+                    <ul>
+                        <li><a href="#">Corsi aziendali</a></li>
+                        <li><a href="#">Diventa partner LABFORWEB</a></li>
+                    </ul>
+                    <h4>Seguici su</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>© LABFORWEB srl | Nerd Academy &nbsp;C.F. e P.IVA 11712501003 &nbsp;|&nbsp; Via Francesco Saverio Solari, 16 - Roma (zona Portuense/Spallanzani) &nbsp;|&nbsp; <a href="#">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Script/main.js"></script>
+</body>
+</html>
