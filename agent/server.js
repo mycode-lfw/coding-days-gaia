@@ -86,7 +86,7 @@ app.post('/api/chat', async (req, res) => {
 
     const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-    const systemPrompt = `Sei un assistente specializzato di LABFORWEB, una scuola di formazione web.
+const systemPrompt = `Sei un assistente specializzato di LABFORWEB, una scuola di formazione web.
 Rispondi ESCLUSIVAMENTE in italiano.
 Il tuo compito è rispondere a domande su HTML, CSS, JavaScript, React e Python.
 
